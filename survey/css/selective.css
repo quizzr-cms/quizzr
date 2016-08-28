@@ -1,0 +1,20 @@
+
+img {
+	max-width:60%;
+	max-height:450px;	
+}
+#msform fieldset {
+  border: 0 none;
+  /*stacking fieldsets above each other. Dont remove/edit the below line*/
+  position: absolute;
+}
+/*Hide all except first fieldset /Donot edit/remove the below line*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+
+
+
+
+

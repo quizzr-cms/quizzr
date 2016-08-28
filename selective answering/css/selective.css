@@ -1,0 +1,71 @@
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*basic reset*/
+* ,element{
+  margin: 0;
+  padding: 0;
+  transform:scale(1);
+
+}
+html {
+  height: 100%;
+  background:#F2F2F2;
+}
+body {
+  font-family: "Open Sans", arial, verdana;
+}
+img {
+	max-width:60%;
+	max-height:450px;
+	
+}
+/*form styles*/
+#msform {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#msform fieldset {
+  
+  border: 0 none;
+  border-radius: 3px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  /*stacking fieldsets above each other*/
+  position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#msform input[type="text"],
+#msform textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: #67d5bf;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+
+

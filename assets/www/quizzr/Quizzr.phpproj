@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Quizzr</Name>
+    <ProjectGuid>{cbe26fd3-f6bd-4577-b2e9-acb092a7f04d}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="includes\src\Facebook\Authentication\AccessToken.php" />
+    <Compile Include="includes\src\Facebook\Authentication\AccessTokenMetadata.php" />
+    <Compile Include="includes\src\Facebook\Authentication\OAuth2Client.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookAuthenticationException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookAuthorizationException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookClientException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookOtherException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookResponseException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookResumableUploadException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookSDKException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookServerException.php" />
+    <Compile Include="includes\src\Facebook\Exceptions\FacebookThrottleException.php" />
+    <Compile Include="includes\src\Facebook\FileUpload\FacebookFile.php" />
+    <Compile Include="includes\src\Facebook\FileUpload\FacebookResumableUploader.php" />
+    <Compile Include="includes\src\Facebook\FileUpload\FacebookTransferChunk.php" />
+    <Compile Include="includes\src\Facebook\FileUpload\FacebookVideo.php" />
+    <Compile Include="includes\src\Facebook\FileUpload\Mimetypes.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\Collection.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphAchievement.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphAlbum.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphApplication.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphCoverPhoto.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphEdge.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphEvent.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphGroup.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphList.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphLocation.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphNode.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphNodeFactory.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphObject.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphObjectFactory.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphPage.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphPicture.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphSessionInfo.php" />
+    <Compile Include="includes\src\Facebook\GraphNodes\GraphUser.php" />
+    <Compile Include="includes\src\Facebook\Helpers\FacebookCanvasHelper.php" />
+    <Compile Include="includes\src\Facebook\Helpers\FacebookJavaScriptHelper.php" />
+    <Compile Include="includes\src\Facebook\Helpers\FacebookPageTabHelper.php" />
+    <Compile Include="includes\src\Facebook\Helpers\FacebookRedirectLoginHelper.php" />
+    <Compile Include="includes\src\Facebook\Helpers\FacebookSignedRequestFromInputHelper.php" />
+    <Compile Include="includes\src\Facebook\Http\GraphRawResponse.php" />
+    <Compile Include="includes\src\Facebook\Http\RequestBodyInterface.php" />
+    <Compile Include="includes\src\Facebook\Http\RequestBodyMultipart.php" />
+    <Compile Include="includes\src\Facebook\Http\RequestBodyUrlEncoded.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\certs\DigiCertHighAssuranceEVRootCA.pem" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookCurl.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookCurlHttpClient.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookGuzzleHttpClient.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookHttpClientInterface.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookStream.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\FacebookStreamHttpClient.php" />
+    <Compile Include="includes\src\Facebook\HttpClients\HttpClientsFactory.php" />
+    <Compile Include="includes\src\Facebook\PersistentData\FacebookMemoryPersistentDataHandler.php" />
+    <Compile Include="includes\src\Facebook\PersistentData\FacebookSessionPersistentDataHandler.php" />
+    <Compile Include="includes\src\Facebook\PersistentData\PersistentDataFactory.php" />
+    <Compile Include="includes\src\Facebook\PersistentData\PersistentDataInterface.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\McryptPseudoRandomStringGenerator.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\OpenSslPseudoRandomStringGenerator.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\PseudoRandomStringGeneratorFactory.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\PseudoRandomStringGeneratorInterface.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\PseudoRandomStringGeneratorTrait.php" />
+    <Compile Include="includes\src\Facebook\PseudoRandomString\UrandomPseudoRandomStringGenerator.php" />
+    <Compile Include="includes\src\Facebook\Url\FacebookUrlDetectionHandler.php" />
+    <Compile Include="includes\src\Facebook\Url\FacebookUrlManipulator.php" />
+    <Compile Include="includes\src\Facebook\Url\UrlDetectionInterface.php" />
+    <Compile Include="includes\src\Facebook\autoload.php" />
+    <Compile Include="includes\src\Facebook\Facebook.php" />
+    <Compile Include="includes\src\Facebook\FacebookApp.php" />
+    <Compile Include="includes\src\Facebook\FacebookBatchRequest.php" />
+    <Compile Include="includes\src\Facebook\FacebookBatchResponse.php" />
+    <Compile Include="includes\src\Facebook\FacebookClient.php" />
+    <Compile Include="includes\src\Facebook\FacebookRequest.php" />
+    <Compile Include="includes\src\Facebook\FacebookResponse.php" />
+    <Compile Include="includes\src\Facebook\SignedRequest.php" />
+    <Compile Include="includes\src\base_facebook.php" />
+    <Compile Include="includes\src\facebook.php" />
+    <Compile Include="includes\src\fb_ca_chain_bundle.crt" />
+    <Compile Include="loginmod.php" />
+    <Compile Include="quizzr.php" />
+    <Compile Include="quesmod.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="includes\src\Facebook\Authentication" />
+    <Folder Include="includes\src\Facebook\Exceptions" />
+    <Folder Include="includes\src\Facebook\FileUpload" />
+    <Folder Include="includes\src\Facebook\GraphNodes" />
+    <Folder Include="includes\src\Facebook\Helpers" />
+    <Folder Include="includes\src\Facebook\Http" />
+    <Folder Include="includes\src\Facebook\HttpClients\certs" />
+    <Folder Include="includes\src\Facebook\HttpClients" />
+    <Folder Include="includes\src\Facebook\PersistentData" />
+    <Folder Include="includes\src\Facebook\PseudoRandomString" />
+    <Folder Include="includes\src\Facebook\Url" />
+    <Folder Include="includes\src\Facebook" />
+    <Folder Include="includes\src" />
+    <Folder Include="includes" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,139 @@
+
+@import url(http://fonts.googleapis.com/css?family=Tangerine:400,100,900);
+* {
+  
+  
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+
+body {
+	
+  background: #112222;
+  font-family: sans-serif;
+  font-weight: 400;
+  color:#fff;
+  text-align:center;
+}
+
+.buttons {
+  display: table;
+  width: 100%;
+  
+}
+.buttons a {
+	font-size:18px;
+	
+}
+.container {
+  display: table-cell;
+  
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #fff;
+  font-size:10px;
+  font-weight: 900;
+  margin: 0px;
+}
+@media (min-width: 450px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1 {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5.25em;
+    margin: 0 0 1em;
+  }
+}
+
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+ 
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+
+
+.btn-2 {
+  letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
